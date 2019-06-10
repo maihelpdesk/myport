@@ -1,0 +1,19 @@
+<!--  Tutorial_01_Hello_Twitter (XML)  -->
+<Module specificationVersion="2">
+<ModulePrefs title="Twitter Feed" description="Twitter OpenSocial Gadget" author="Deloitte" height="500"> 
+<Link rel="Icon" href="Twitter.png"/></ModulePrefs>
+<Content type="html">
+<![CDATA[ 
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://platform.twitter.com/widgets.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'twitter-wjs'));</script>
+<a class="twitter-timeline"
+  href="https://twitter.com/MAferries">
+  width="500"
+Tweets by @MAferries
+</a>
+]]> </Content> </Module>
